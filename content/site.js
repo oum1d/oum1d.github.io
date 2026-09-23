@@ -4,9 +4,9 @@ export const SITE = {
   role: 'Web designer & developer',
   city: 'Białystok, Poland',
 
-  // ВНИМАНИЕ: перед публикацией подтвердить у Omid, какой адрес показывать.
+  // Рабочая почта — Omid подтвердил 23.09.2026, что показываем её.
   email: 'naghav1.0m1d1k@gmail.com',
-  behance: 'https://www.behance.net/oum1d',
+  behance: 'https://www.behance.net/omidnaghavi',
   github: 'https://github.com/oum1d',
   origin: 'https://oum1d.github.io',
 
