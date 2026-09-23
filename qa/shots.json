@@ -1,0 +1,7 @@
+[
+  { "name": "home-desktop", "url": "http://localhost:4321/", "scheme": "light", "locale": "en-GB", "height": 1000 },
+  { "name": "home-work", "url": "http://localhost:4321/", "scheme": "light", "locale": "en-GB", "height": 1000, "scrollTo": "#work", "offset": -40 },
+  { "name": "case-widnia", "url": "http://localhost:4321/work/widnia/", "scheme": "light", "locale": "en-GB", "height": 1000 },
+  { "name": "home-mobile", "url": "http://localhost:4321/", "mobile": true, "scheme": "light", "locale": "en-GB" },
+  { "name": "home-dark", "url": "http://localhost:4321/", "scheme": "dark", "locale": "en-GB", "height": 1000 }
+]

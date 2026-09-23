@@ -1,0 +1,16 @@
+{
+  "name": "oum1d-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "images": "node scripts/images.js",
+    "dev": "node scripts/serve.js"
+  },
+  "dependencies": {
+    "@fontsource-variable/figtree": "^5.3.0",
+    "@fontsource/instrument-serif": "^5.3.0",
+    "marked": "^18.0.14",
+    "sharp": "^0.35.4"
+  }
+}
