@@ -8,8 +8,9 @@ import { WORKS } from '../content/works.js';
 const SRC = 'C:/Проэкты/portfolio-shots';
 const OUT = 'assets/img/works';
 
-// Две ширины: карточка на главной обходится узкой, страница проекта берёт широкую.
-const SIZES = [{ w: 760, suffix: '' }, { w: 1440, suffix: '@2x' }];
+// Две ширины. Исходники сняты в двойной плотности (2880 px), поэтому широкий
+// файл остаётся резким и на обычном экране, и на ретине.
+const SIZES = [{ w: 1440, suffix: '' }, { w: 2400, suffix: '@2x' }];
 
 let made = 0;
 const missing = [];

@@ -12,7 +12,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 const img = (slug, file, { alt = '', loading = 'lazy', sizes = '(max-width: 54rem) 100vw, 40rem' } = {}) => {
   const base = file.replace(/\.[a-z]+$/, '');
   const src = `/assets/img/works/${slug}/${base}`;
-  return `<img src="${src}.webp" srcset="${src}.webp 760w, ${src}@2x.webp 1440w"
+  return `<img src="${src}.webp" srcset="${src}.webp 1440w, ${src}@2x.webp 2400w"
     sizes="${sizes}" alt="${esc(alt)}" loading="${loading}" decoding="async">`;
 };
 
@@ -71,7 +71,9 @@ const metrics = list => list.length
 function homeCard(work, index) {
   return `<article class="work">
   <figure class="work__shot">
-    <a href="/work/${work.slug}/">${img(work.slug, work.hero, '', `${work.title} — ${work.kind}`, index < 2 ? 'eager' : 'lazy')}</a>
+    <a href="/work/${work.slug}/">${img(work.slug, work.hero, {
+      alt: `${work.title} — ${work.kind}`, loading: index < 2 ? 'eager' : 'lazy',
+    })}</a>
   </figure>
   <div>
     <p class="work__year">${esc(work.year)}</p>
@@ -152,7 +154,9 @@ async function casePage(work, index) {
     ${tags(work.tags)}
     <div class="btn-row">${links}</div>
     ${metrics(work.metrics)}
-    <figure class="case__hero">${img(work.slug, work.hero, '', `${work.title} — home page`, 'eager')}</figure>
+    <figure class="case__hero">${img(work.slug, work.hero, {
+      alt: `${work.title} — home page`, loading: 'eager', sizes: '(max-width: 54rem) 100vw, 74rem',
+    })}</figure>
     <div class="prose">${marked.parse(text)}</div>
     <div class="gallery">
       ${work.gallery.map(f => `<figure>${img(work.slug, f, {

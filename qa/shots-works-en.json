@@ -1,27 +1,269 @@
 [
-  { "name": "gul/home-en", "url": "http://localhost:4400/gul-rehearsal/index.html?lang=en", "locale": "en-GB", "wait": 2500 },
-  { "name": "gul/rooms-en", "url": "http://localhost:4400/gul-rehearsal/rooms.html?lang=en", "locale": "en-GB", "wait": 2500 },
-  { "name": "gul/room-en", "url": "http://localhost:4400/gul-rehearsal/room.html?lang=en", "locale": "en-GB", "wait": 2500 },
-  { "name": "gul/pricing-en", "url": "http://localhost:4400/gul-rehearsal/pricing.html?lang=en", "locale": "en-GB", "wait": 2500 },
-  { "name": "gul/room-mobile-en", "url": "http://localhost:4400/gul-rehearsal/room.html?lang=en", "locale": "en-GB", "mobile": true, "wait": 2500 },
-
-  { "name": "takt/home-en", "url": "http://localhost:4400/takt/index.html?lang=en", "locale": "en-GB", "wait": 2500 },
-  { "name": "takt/map-en", "url": "http://localhost:4400/takt/app.html?lang=en", "locale": "en-GB", "wait": 4000 },
-  { "name": "takt/features-en", "url": "http://localhost:4400/takt/features.html?lang=en", "locale": "en-GB", "wait": 2500 },
-  { "name": "takt/rails-en", "url": "http://localhost:4400/takt/rails.html?lang=en", "locale": "en-GB", "wait": 2500 },
-  { "name": "takt/pricing-en", "url": "http://localhost:4400/takt/pricing.html?lang=en", "locale": "en-GB", "wait": 2500 },
-
-  { "name": "zarya/home-en", "url": "http://localhost:4400/zarya-neon/index.html?lang=en", "locale": "en-GB", "wait": 4000 },
-  { "name": "zarya/home-mobile-en", "url": "http://localhost:4400/zarya-neon/index.html?lang=en", "locale": "en-GB", "mobile": true, "wait": 4000 },
-
-  { "name": "midnight/home-en", "url": "http://localhost:4400/midnight-zone/index.html?lang=en", "locale": "en-GB", "wait": 3000 },
-  { "name": "midnight/halls-en", "url": "http://localhost:4400/midnight-zone/halls.html?lang=en", "locale": "en-GB", "wait": 3000 },
-  { "name": "midnight/visit-en", "url": "http://localhost:4400/midnight-zone/visit.html?lang=en", "locale": "en-GB", "wait": 3000 },
-  { "name": "midnight/tickets-en", "url": "http://localhost:4400/midnight-zone/tickets.html?lang=en", "locale": "en-GB", "wait": 3000 },
-
-  { "name": "widnia/home-en", "url": "http://localhost:8787/en/", "locale": "en-GB", "scheme": "dark", "wait": 2500 },
-  { "name": "widnia/catalog-en", "url": "http://localhost:8787/en/apartments", "locale": "en-GB", "scheme": "dark", "wait": 2500 },
-  { "name": "widnia/unit-en", "url": "http://localhost:8787/en/apartments/2", "locale": "en-GB", "scheme": "dark", "wait": 2500 },
-  { "name": "widnia/mortgage-en", "url": "http://localhost:8787/en/mortgage-calculator", "locale": "en-GB", "scheme": "dark", "wait": 2500 },
-  { "name": "widnia/home-mobile-en", "url": "http://localhost:8787/en/", "locale": "en-GB", "scheme": "dark", "mobile": true, "wait": 2500 }
+  {
+    "name": "widnia/home-en",
+    "url": "http://localhost:8787/en/",
+    "locale": "en-GB",
+    "scheme": "dark",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "widnia/catalog-en",
+    "url": "http://localhost:8787/en/apartments",
+    "locale": "en-GB",
+    "scheme": "dark",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "widnia/unit-en",
+    "url": "http://localhost:8787/en/apartments/2",
+    "locale": "en-GB",
+    "scheme": "dark",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "widnia/mortgage-en",
+    "url": "http://localhost:8787/en/mortgage-calculator",
+    "locale": "en-GB",
+    "scheme": "dark",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "widnia/home-mobile-en",
+    "url": "http://localhost:8787/en/",
+    "locale": "en-GB",
+    "scheme": "dark",
+    "mobile": true,
+    "wait": 2500,
+    "dpr": 3
+  },
+  {
+    "name": "gul/home-en",
+    "url": "http://localhost:4400/gul-rehearsal/index.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "gul/rooms-en",
+    "url": "http://localhost:4400/gul-rehearsal/rooms.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "gul/room-en",
+    "url": "http://localhost:4400/gul-rehearsal/room.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "gul/pricing-en",
+    "url": "http://localhost:4400/gul-rehearsal/pricing.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "gul/room-mobile-en",
+    "url": "http://localhost:4400/gul-rehearsal/room.html?lang=en",
+    "locale": "en-GB",
+    "mobile": true,
+    "wait": 2500,
+    "dpr": 3
+  },
+  {
+    "name": "takt/home-en",
+    "url": "http://localhost:4400/takt/index.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "takt/map-en",
+    "url": "http://localhost:4400/takt/app.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 4000
+  },
+  {
+    "name": "takt/features-en",
+    "url": "http://localhost:4400/takt/features.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "takt/rails-en",
+    "url": "http://localhost:4400/takt/rails.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "takt/pricing-en",
+    "url": "http://localhost:4400/takt/pricing.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "midnight/home-en",
+    "url": "http://localhost:4400/midnight-zone/index.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 3000
+  },
+  {
+    "name": "midnight/halls-en",
+    "url": "http://localhost:4400/midnight-zone/halls.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 3000
+  },
+  {
+    "name": "midnight/visit-en",
+    "url": "http://localhost:4400/midnight-zone/visit.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 3000
+  },
+  {
+    "name": "midnight/tickets-en",
+    "url": "http://localhost:4400/midnight-zone/tickets.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 3000
+  },
+  {
+    "name": "roy/lesson",
+    "url": "http://localhost:4400/roy/lesson.html",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 3500
+  },
+  {
+    "name": "roy/catalog",
+    "url": "http://localhost:4400/roy/catalog.html",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "roy/teachers",
+    "url": "http://localhost:4400/roy/teachers.html",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "roy/pricing",
+    "url": "http://localhost:4400/roy/pricing.html",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "roy/lesson-mobile",
+    "url": "http://localhost:4400/roy/lesson.html",
+    "locale": "ru-RU",
+    "mobile": true,
+    "wait": 3500,
+    "dpr": 3
+  },
+  {
+    "name": "zatvor/catalog",
+    "url": "http://localhost:4400/zatvor/catalog.html",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "zatvor/camera",
+    "url": "http://localhost:4400/zatvor/camera.html",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "zatvor/compare",
+    "url": "http://localhost:4400/zatvor/compare.html",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "zatvor/repair",
+    "url": "http://localhost:4400/zatvor/repair.html",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 2500
+  },
+  {
+    "name": "zatvor/camera-mobile",
+    "url": "http://localhost:4400/zatvor/camera.html",
+    "locale": "ru-RU",
+    "mobile": true,
+    "wait": 2500,
+    "dpr": 3
+  },
+  {
+    "name": "30k30/home",
+    "url": "http://localhost:4400/30k30-wishlist/index.html",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 3000
+  },
+  {
+    "name": "30k30/single",
+    "url": "http://localhost:4400/30k30-wishlist/wishlist-single.html",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 3000
+  },
+  {
+    "name": "30k30/home-mobile",
+    "url": "http://localhost:4400/30k30-wishlist/index.html",
+    "locale": "ru-RU",
+    "mobile": true,
+    "wait": 3000,
+    "dpr": 3
+  },
+  {
+    "name": "zarya/home-en",
+    "url": "http://localhost:4400/zarya-neon/index.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 4000
+  },
+  {
+    "name": "zarya/sign-laptop-en",
+    "url": "http://localhost:4400/zarya-neon/index.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "width": 1100,
+    "height": 800,
+    "wait": 4000
+  },
+  {
+    "name": "zarya/sign-narrow-en",
+    "url": "http://localhost:4400/zarya-neon/index.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "width": 820,
+    "height": 900,
+    "wait": 4000
+  },
+  {
+    "name": "zarya/home-mobile-en",
+    "url": "http://localhost:4400/zarya-neon/index.html?lang=en",
+    "locale": "en-GB",
+    "mobile": true,
+    "dpr": 3,
+    "wait": 4000
+  }
 ]
