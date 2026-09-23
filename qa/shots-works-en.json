@@ -112,34 +112,6 @@
     "wait": 2500
   },
   {
-    "name": "midnight/home-en",
-    "url": "http://localhost:4400/midnight-zone/index.html?lang=en",
-    "locale": "en-GB",
-    "dpr": 2,
-    "wait": 3000
-  },
-  {
-    "name": "midnight/halls-en",
-    "url": "http://localhost:4400/midnight-zone/halls.html?lang=en",
-    "locale": "en-GB",
-    "dpr": 2,
-    "wait": 3000
-  },
-  {
-    "name": "midnight/visit-en",
-    "url": "http://localhost:4400/midnight-zone/visit.html?lang=en",
-    "locale": "en-GB",
-    "dpr": 2,
-    "wait": 3000
-  },
-  {
-    "name": "midnight/tickets-en",
-    "url": "http://localhost:4400/midnight-zone/tickets.html?lang=en",
-    "locale": "en-GB",
-    "dpr": 2,
-    "wait": 3000
-  },
-  {
     "name": "roy/lesson",
     "url": "http://localhost:4400/roy/lesson.html",
     "locale": "ru-RU",
@@ -212,28 +184,6 @@
     "dpr": 3
   },
   {
-    "name": "30k30/home",
-    "url": "http://localhost:4400/30k30-wishlist/index.html",
-    "locale": "ru-RU",
-    "dpr": 2,
-    "wait": 3000
-  },
-  {
-    "name": "30k30/single",
-    "url": "http://localhost:4400/30k30-wishlist/wishlist-single.html",
-    "locale": "ru-RU",
-    "dpr": 2,
-    "wait": 3000
-  },
-  {
-    "name": "30k30/home-mobile",
-    "url": "http://localhost:4400/30k30-wishlist/index.html",
-    "locale": "ru-RU",
-    "mobile": true,
-    "wait": 3000,
-    "dpr": 3
-  },
-  {
     "name": "zarya/home-en",
     "url": "http://localhost:4400/zarya-neon/index.html?lang=en",
     "locale": "en-GB",
@@ -241,13 +191,22 @@
     "wait": 4000
   },
   {
-    "name": "zarya/sign-laptop-en",
+    "name": "zarya/builder-en",
     "url": "http://localhost:4400/zarya-neon/index.html?lang=en",
     "locale": "en-GB",
     "dpr": 2,
-    "width": 1100,
-    "height": 800,
-    "wait": 4000
+    "wait": 4000,
+    "scrollTo": "#builder",
+    "offset": -60
+  },
+  {
+    "name": "zarya/prices-en",
+    "url": "http://localhost:4400/zarya-neon/index.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 4000,
+    "scrollTo": "#prices",
+    "offset": -60
   },
   {
     "name": "zarya/sign-narrow-en",
@@ -265,5 +224,82 @@
     "mobile": true,
     "dpr": 3,
     "wait": 4000
+  },
+  {
+    "name": "30k30/home",
+    "url": "http://localhost:4400/30k30-wishlist/index.html",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 3000
+  },
+  {
+    "name": "30k30/catalog",
+    "url": "http://localhost:4400/30k30-wishlist/index.html",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 3000,
+    "scrollTo": "#catalog",
+    "offset": -60
+  },
+  {
+    "name": "30k30/pool",
+    "url": "http://localhost:4400/30k30-wishlist/index.html",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 3000,
+    "scrollTo": "#pool",
+    "offset": -60
+  },
+  {
+    "name": "30k30/anti",
+    "url": "http://localhost:4400/30k30-wishlist/index.html",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 3000,
+    "scrollTo": "#anti",
+    "offset": -60
+  },
+  {
+    "name": "30k30/home-mobile",
+    "url": "http://localhost:4400/30k30-wishlist/index.html",
+    "locale": "ru-RU",
+    "mobile": true,
+    "dpr": 3,
+    "wait": 3000
+  },
+  {
+    "name": "midnight/home-en",
+    "url": "http://localhost:4400/midnight-zone/index.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 3000
+  },
+  {
+    "name": "midnight/halls-en",
+    "url": "http://localhost:4400/midnight-zone/halls.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 3000
+  },
+  {
+    "name": "midnight/visit-en",
+    "url": "http://localhost:4400/midnight-zone/visit.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 3000
+  },
+  {
+    "name": "midnight/schools-en",
+    "url": "http://localhost:4400/midnight-zone/schools.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 3000
+  },
+  {
+    "name": "midnight/tickets-en",
+    "url": "http://localhost:4400/midnight-zone/tickets.html?lang=en",
+    "locale": "en-GB",
+    "dpr": 2,
+    "wait": 3000
   }
 ]

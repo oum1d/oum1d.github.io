@@ -68,7 +68,7 @@ export const WORKS = [
     code: 'https://github.com/oum1d/midnight-zone',
     shots: '_en/midnight',
     hero: 'home-en.png',
-    gallery: ['halls-en.png', 'visit-en.png', 'tickets-en.png'],
+    gallery: ['halls-en.png', 'visit-en.png', 'schools-en.png', 'tickets-en.png'],
     metrics: [],
   },
   {
@@ -96,7 +96,7 @@ export const WORKS = [
     code: 'https://github.com/oum1d/zarya-neon',
     shots: '_en/zarya',
     hero: 'home-en.png',
-    gallery: ['sign-laptop-en.png', 'sign-narrow-en.png', 'home-mobile-en.png'],
+    gallery: ['builder-en.png', 'prices-en.png', 'sign-narrow-en.png', 'home-mobile-en.png'],
     metrics: [],
   },
   {
@@ -110,7 +110,7 @@ export const WORKS = [
     code: 'https://github.com/oum1d/30k30-wishlist',
     shots: '_en/30k30',
     hero: 'home.png',
-    gallery: ['single.png', 'home-mobile.png'],
+    gallery: ['catalog.png', 'pool.png', 'anti.png', 'home-mobile.png'],
     metrics: [['30', 'gifts']],
   },
 ];

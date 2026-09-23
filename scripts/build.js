@@ -9,14 +9,15 @@ import { SITE } from '../content/site.js';
 
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 // sizes нужен честный: иначе браузер берёт узкий файл и растягивает его на всю ширину.
-const img = (slug, file, { alt = '', loading = 'lazy', sizes = '(max-width: 54rem) 100vw, 40rem' } = {}) => {
+const img = (slug, file, { alt = '', loading = 'lazy', sizes = '(max-width: 54rem) 100vw, 40rem', zoom = false } = {}) => {
   const base = file.replace(/\.[a-z]+$/, '');
   const src = `/assets/img/works/${slug}/${base}`;
+  // data-zoom — адрес крупного файла: по нему скрипт открывает снимок во весь экран
   return `<img src="${src}.webp" srcset="${src}.webp 1440w, ${src}@2x.webp 2400w"
-    sizes="${sizes}" alt="${esc(alt)}" loading="${loading}" decoding="async">`;
+    sizes="${sizes}" alt="${esc(alt)}" loading="${loading}" decoding="async"${zoom ? ` data-zoom="${src}@2x.webp"` : ''}>`;
 };
 
-function page({ title, description, path, body, active = '' }) {
+function page({ title, description, path, body, active = '', scripts = '' }) {
   const url = SITE.origin + path;
   const nav = [['/#work', 'Work', 'work'], ['/about/', 'About', 'about'], [`mailto:${SITE.email}`, 'Contact', '']]
     .map(([href, label, key]) =>
@@ -39,6 +40,7 @@ function page({ title, description, path, body, active = '' }) {
 <meta property="og:url" content="${url}">
 <meta property="og:image" content="${SITE.origin}/assets/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
+${scripts}
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -155,12 +157,12 @@ async function casePage(work, index) {
     <div class="btn-row">${links}</div>
     ${metrics(work.metrics)}
     <figure class="case__hero">${img(work.slug, work.hero, {
-      alt: `${work.title} — home page`, loading: 'eager', sizes: '(max-width: 54rem) 100vw, 74rem',
+      alt: `${work.title} — home page`, loading: 'eager', sizes: '(max-width: 54rem) 100vw, 74rem', zoom: true,
     })}</figure>
     <div class="prose">${marked.parse(text)}</div>
     <div class="gallery">
       ${work.gallery.map(f => `<figure>${img(work.slug, f, {
-        alt: `${work.title} — screen`, sizes: '(max-width: 54rem) 100vw, 34rem',
+        alt: `${work.title} — screen`, sizes: '(max-width: 54rem) 100vw, 34rem', zoom: true,
       })}</figure>`).join('\n      ')}
     </div>
   </div>
@@ -178,6 +180,7 @@ async function casePage(work, index) {
     title: `${work.title} — ${work.kind} · ${SITE.name}`,
     description: work.lead,
     path: `/work/${work.slug}/`, body, active: 'work',
+    scripts: '<script src="/assets/js/lightbox.js" defer></script>',
   }));
 }
 
