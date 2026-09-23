@@ -5,7 +5,8 @@
   "scripts": {
     "build": "node scripts/build.js",
     "images": "node scripts/images.js",
-    "dev": "node scripts/serve.js"
+    "dev": "node scripts/serve.js",
+    "behance": "node scripts/behance.js"
   },
   "dependencies": {
     "@fontsource-variable/figtree": "^5.3.0",

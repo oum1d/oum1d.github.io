@@ -1,0 +1,74 @@
+[
+  {
+    "name": "widnia/01-cover",
+    "url": "http://localhost:4321/covers.html?slug=widnia",
+    "width": 808,
+    "height": 632,
+    "dpr": 2,
+    "locale": "en-GB",
+    "wait": 2500
+  },
+  {
+    "name": "roy/01-cover",
+    "url": "http://localhost:4321/covers.html?slug=roy",
+    "width": 808,
+    "height": 632,
+    "dpr": 2,
+    "locale": "en-GB",
+    "wait": 2500
+  },
+  {
+    "name": "takt/01-cover",
+    "url": "http://localhost:4321/covers.html?slug=takt",
+    "width": 808,
+    "height": 632,
+    "dpr": 2,
+    "locale": "en-GB",
+    "wait": 2500
+  },
+  {
+    "name": "zatvor/01-cover",
+    "url": "http://localhost:4321/covers.html?slug=zatvor",
+    "width": 808,
+    "height": 632,
+    "dpr": 2,
+    "locale": "en-GB",
+    "wait": 2500
+  },
+  {
+    "name": "midnight-zone/01-cover",
+    "url": "http://localhost:4321/covers.html?slug=midnight-zone",
+    "width": 808,
+    "height": 632,
+    "dpr": 2,
+    "locale": "en-GB",
+    "wait": 2500
+  },
+  {
+    "name": "gul/01-cover",
+    "url": "http://localhost:4321/covers.html?slug=gul",
+    "width": 808,
+    "height": 632,
+    "dpr": 2,
+    "locale": "en-GB",
+    "wait": 2500
+  },
+  {
+    "name": "zarya/01-cover",
+    "url": "http://localhost:4321/covers.html?slug=zarya",
+    "width": 808,
+    "height": 632,
+    "dpr": 2,
+    "locale": "en-GB",
+    "wait": 2500
+  },
+  {
+    "name": "30k30/01-cover",
+    "url": "http://localhost:4321/covers.html?slug=30k30",
+    "width": 808,
+    "height": 632,
+    "dpr": 2,
+    "locale": "en-GB",
+    "wait": 2500
+  }
+]

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Behance cover</title>
+<!-- Обложка для Behance: 808×632, снимается скриптом при dpr 2.
+     Адрес: /covers.html?slug=widnia — какой проект рисовать.
+     Текст и снимок разведены по сторонам: на самом снимке уже есть заголовок,
+     и накладывать поверх него второй — значит получить два заголовка сразу. -->
+<link rel="stylesheet" href="/assets/css/site.css">
+<style>
+  html, body { margin: 0; background: #0f0e0c; }
+  .cover {
+    position: relative; width: 808px; height: 632px; overflow: hidden;
+    display: grid; grid-template-columns: 340px 1fr;
+    background: var(--paper); color: var(--ink);
+  }
+  .cover__text {
+    padding: 44px 28px 40px 44px;
+    display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .cover__badge {
+    align-self: start;
+    font-family: 'Figtree', system-ui, sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--accent); border: 1px solid var(--accent);
+    border-radius: 999px; padding: 5px 12px; opacity: 0.85;
+  }
+  .cover__kind {
+    font-family: 'Figtree', system-ui, sans-serif; font-size: 13px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent);
+    margin: 0 0 10px; line-height: 1.4;
+  }
+  .cover__title {
+    font-family: 'Instrument Serif', Georgia, serif; font-size: 54px; line-height: 0.98;
+    letter-spacing: -0.02em; margin: 0;
+  }
+  .cover__note {
+    font-family: 'Figtree', system-ui, sans-serif; font-size: 14px; line-height: 1.5;
+    color: var(--ink-2); margin: 14px 0 0;
+  }
+  .cover__name {
+    font-family: 'Figtree', system-ui, sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); margin: 0;
+  }
+  /* Снимок уходит за правый край — видно, что это страница, а не картинка в рамке */
+  .cover__shot {
+    position: relative; margin: 44px -60px 44px 0;
+    border-radius: 14px 0 0 14px; overflow: hidden;
+    border: 1px solid var(--line); border-right: 0;
+    box-shadow: -18px 24px 60px rgba(25, 23, 19, 0.22);
+    background: var(--card);
+  }
+  .cover__shot img { width: 100%; height: 100%; object-fit: cover; object-position: top left; }
+</style>
+</head>
+<body>
+<div class="cover" id="cover"></div>
+<script type="module">
+  import { WORKS } from '/content/works.js';
+  const slug = new URLSearchParams(location.search).get('slug') ?? WORKS[0].slug;
+  const work = WORKS.find(w => w.slug === slug) ?? WORKS[0];
+  const base = work.hero.replace(/\.[a-z]+$/, '');
+  // Первое предложение описания — короткая мысль, длинное на обложке не читают
+  const note = work.lead.split('. ')[0] + '.';
+  document.getElementById('cover').innerHTML = `
+    <div class="cover__text">
+      <span class="cover__badge">Concept project</span>
+      <div>
+        <p class="cover__kind">${work.kind}</p>
+        <h1 class="cover__title">${work.title}</h1>
+        <p class="cover__note">${note}</p>
+      </div>
+      <p class="cover__name">Omid Naghavi · ${work.year}</p>
+    </div>
+    <figure class="cover__shot">
+      <img src="/assets/img/works/${work.slug}/${base}@2x.webp" alt="">
+    </figure>`;
+</script>
+</body>
+</html>
