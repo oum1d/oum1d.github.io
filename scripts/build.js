@@ -12,8 +12,10 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 const img = (slug, file, { alt = '', loading = 'lazy', sizes = '(max-width: 54rem) 100vw, 40rem', zoom = false } = {}) => {
   const base = file.replace(/\.[a-z]+$/, '');
   const src = `/assets/img/works/${slug}/${base}`;
+  // Телефонный кадр высокий и узкий — в галерее показываем его целиком, а не режем
+  const cls = /mobile/.test(base) ? ' class="is-phone"' : '';
   // data-zoom — адрес крупного файла: по нему скрипт открывает снимок во весь экран
-  return `<img src="${src}.webp" srcset="${src}.webp 1440w, ${src}@2x.webp 2400w"
+  return `<img${cls} src="${src}.webp" srcset="${src}.webp 1440w, ${src}@2x.webp 2400w"
     sizes="${sizes}" alt="${esc(alt)}" loading="${loading}" decoding="async"${zoom ? ` data-zoom="${src}@2x.webp"` : ''}>`;
 };
 

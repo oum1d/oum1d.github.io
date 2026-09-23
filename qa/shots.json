@@ -45,5 +45,15 @@
     "dpr": 2,
     "scrollTo": ".gallery",
     "offset": -40
+  },
+  {
+    "name": "case-gallery-2",
+    "url": "http://localhost:4321/work/widnia/",
+    "scheme": "light",
+    "locale": "en-GB",
+    "height": 1000,
+    "dpr": 2,
+    "scrollTo": ".gallery",
+    "offset": -420
   }
 ]
