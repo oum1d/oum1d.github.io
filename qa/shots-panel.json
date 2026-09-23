@@ -1,0 +1,38 @@
+[
+  {
+    "name": "widnia/panel-summary-en",
+    "url": "http://localhost:8787/panel/",
+    "locale": "en-GB",
+    "scheme": "dark",
+    "dpr": 2,
+    "wait": 2500,
+    "click": [
+      "form[action=\"/auth/dev-login\"] button[type=\"submit\"]"
+    ],
+    "then": "http://localhost:8787/panel/?lang=en"
+  },
+  {
+    "name": "widnia/panel-unit-en",
+    "url": "http://localhost:8787/panel/",
+    "locale": "en-GB",
+    "scheme": "dark",
+    "dpr": 2,
+    "wait": 2500,
+    "click": [
+      "form[action=\"/auth/dev-login\"] button[type=\"submit\"]"
+    ],
+    "then": "http://localhost:8787/panel/mieszkania/2?lang=en"
+  },
+  {
+    "name": "widnia/panel-log-en",
+    "url": "http://localhost:8787/panel/",
+    "locale": "en-GB",
+    "scheme": "dark",
+    "dpr": 2,
+    "wait": 2500,
+    "click": [
+      "form[action=\"/auth/dev-login\"] button[type=\"submit\"]"
+    ],
+    "then": "http://localhost:8787/panel/dziennik?lang=en"
+  }
+]

@@ -1,7 +1,7 @@
 // Готовит папку C:\Проэкты\behance: картинки нужного размера и текст к каждому проекту.
 // Behance показывает картинки шириной 1400 px и увеличивает до 2800 — выгружаем 2800.
 // Запуск: node scripts/behance.js
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, writeFile, readdir, unlink } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import sharp from 'sharp';
 import { WORKS } from '../content/works.js';
@@ -33,6 +33,12 @@ const missing = [];
 for (const work of WORKS) {
   const dir = `${OUT}/${work.slug}`;
   await mkdir(dir, { recursive: true });
+
+  // Чистим прошлую выгрузку: после смены состава остаются файлы со старыми
+  // номерами, и в Behance уедут дубли. Обложку не трогаем — её делает другой скрипт.
+  for (const f of await readdir(dir)) {
+    if (/^\d\d-.+\.jpg$/.test(f) && f !== '01-cover.jpg') await unlink(`${dir}/${f}`);
+  }
 
   // Порядок важен: Behance показывает картинки одну под другой, как в рассказе
   const order = [work.hero, ...work.gallery];
