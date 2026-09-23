@@ -25,7 +25,7 @@
   },
   {
     "name": "widnia/mortgage-en",
-    "url": "http://localhost:8787/en/mortgage-calculator",
+    "url": "http://localhost:8787/en/mortgage-calculator?price=605470&down=120000&years=25&rate=7.2",
     "locale": "en-GB",
     "scheme": "dark",
     "dpr": 2,
@@ -56,7 +56,7 @@
   },
   {
     "name": "gul/room-en",
-    "url": "http://localhost:4400/gul-rehearsal/room.html?lang=en",
+    "url": "http://localhost:4400/gul-rehearsal/room.html?id=a&lang=en",
     "locale": "en-GB",
     "dpr": 2,
     "wait": 2500
@@ -70,7 +70,7 @@
   },
   {
     "name": "gul/room-mobile-en",
-    "url": "http://localhost:4400/gul-rehearsal/room.html?lang=en",
+    "url": "http://localhost:4400/gul-rehearsal/room.html?id=a&lang=en",
     "locale": "en-GB",
     "mobile": true,
     "wait": 2500,
@@ -98,11 +98,11 @@
     "wait": 2500
   },
   {
-    "name": "takt/rails-en",
-    "url": "http://localhost:4400/takt/rails.html?lang=en",
+    "name": "takt/incidents-en",
+    "url": "http://localhost:4400/takt/app.html?lang=en#incidents",
     "locale": "en-GB",
     "dpr": 2,
-    "wait": 2500
+    "wait": 4000
   },
   {
     "name": "takt/pricing-en",
@@ -145,42 +145,6 @@
     "locale": "ru-RU",
     "mobile": true,
     "wait": 3500,
-    "dpr": 3
-  },
-  {
-    "name": "zatvor/catalog",
-    "url": "http://localhost:4400/zatvor/catalog.html",
-    "locale": "ru-RU",
-    "dpr": 2,
-    "wait": 2500
-  },
-  {
-    "name": "zatvor/camera",
-    "url": "http://localhost:4400/zatvor/camera.html",
-    "locale": "ru-RU",
-    "dpr": 2,
-    "wait": 2500
-  },
-  {
-    "name": "zatvor/compare",
-    "url": "http://localhost:4400/zatvor/compare.html",
-    "locale": "ru-RU",
-    "dpr": 2,
-    "wait": 2500
-  },
-  {
-    "name": "zatvor/repair",
-    "url": "http://localhost:4400/zatvor/repair.html",
-    "locale": "ru-RU",
-    "dpr": 2,
-    "wait": 2500
-  },
-  {
-    "name": "zatvor/camera-mobile",
-    "url": "http://localhost:4400/zatvor/camera.html",
-    "locale": "ru-RU",
-    "mobile": true,
-    "wait": 2500,
     "dpr": 3
   },
   {
@@ -300,6 +264,42 @@
     "url": "http://localhost:4400/midnight-zone/tickets.html?lang=en",
     "locale": "en-GB",
     "dpr": 2,
+    "wait": 3000
+  },
+  {
+    "name": "zatvor/catalog",
+    "url": "http://localhost:4400/zatvor/catalog.html",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 3000
+  },
+  {
+    "name": "zatvor/camera",
+    "url": "http://localhost:4400/zatvor/camera.html?id=olympus-trip-35",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 3000
+  },
+  {
+    "name": "zatvor/compare",
+    "url": "http://localhost:4400/zatvor/compare.html?a=olympus-trip-35&b=zenit-e",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 3000
+  },
+  {
+    "name": "zatvor/repair",
+    "url": "http://localhost:4400/zatvor/repair.html",
+    "locale": "ru-RU",
+    "dpr": 2,
+    "wait": 3000
+  },
+  {
+    "name": "zatvor/camera-mobile",
+    "url": "http://localhost:4400/zatvor/camera.html?id=olympus-trip-35",
+    "locale": "ru-RU",
+    "mobile": true,
+    "dpr": 3,
     "wait": 3000
   }
 ]

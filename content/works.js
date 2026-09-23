@@ -40,7 +40,7 @@ export const WORKS = [
     code: 'https://github.com/oum1d/takt',
     shots: '_en/takt',
     hero: 'map-en.png',
-    gallery: ['home-en.png', 'features-en.png', 'rails-en.png', 'pricing-en.png'],
+    gallery: ['home-en.png', 'features-en.png', 'incidents-en.png', 'pricing-en.png'],
     metrics: [['3', 'languages']],
   },
   {
