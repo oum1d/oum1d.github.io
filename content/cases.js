@@ -15,9 +15,11 @@ And nobody at a club wants to maintain a website. The coach has training to run.
 the goal difference, the top scorer list, the player pages and the "next match" block on the home
 page all change by themselves. There is no second place where the same number could be wrong.
 
-**A squad page that stays honest.** Goals and appearances come from the match reports, so the
-numbers on a player's card always agree with the results page. Add up every player's goals and you
-get exactly what the table says the team scored.
+**A squad page that stays honest.** The list answers one question — who plays — so it carries names
+and positions, and the numbers wait inside a player's card. Goals and appearances come from the match
+reports: add up every player's goals and you get exactly what the table says the team scored.
+Injured players and academy call-ups are marked, because a squad with three keepers and no
+explanation raises questions.
 
 **The academy page as the main page.** Age groups, times, prices, what to bring to a first session,
 and the questions parents actually ask. The sign-up form goes to the coach by email and is also
@@ -34,8 +36,9 @@ and the squad stats sit at the top of the screen, before anything else.
 ## Result
 
 A WordPress site with a theme written for this club rather than bought and adjusted — no page
-builder, no bundled template. 79 pages across two languages, 56 fixtures, every text contrast checked
-against WCAG AA, no horizontal scrolling at any width from 360 px up.
+builder, no bundled template. 85 pages across two languages, 56 fixtures, every club crest drawn for
+the site, every text contrast checked against WCAG AA, no horizontal scrolling at any width from
+360 px up.
 
 The club is invented for this portfolio piece, and every page says so.`,
 
