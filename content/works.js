@@ -2,6 +2,20 @@
 // Тексты кейсов лежат отдельно, в content/cases/<slug>.md — так их проще править.
 export const WORKS = [
   {
+    slug: 'porohy',
+    title: 'Porohy',
+    kind: 'Handball club · WordPress',
+    lead: 'The league table and every player’s stats are counted from the match reports, not typed in. The coach enters a score once and the whole site catches up — table, top scorers, next fixture.',
+    year: '2026',
+    tags: ['WordPress', 'Own theme', 'Two languages', 'Club admin', 'Static export'],
+    live: 'https://oum1d.github.io/porohy/',
+    code: 'https://github.com/oum1d/porohy',
+    shots: '_en/porohy',
+    hero: 'home-en.png',
+    gallery: ['table-en.png', 'match-en.png', 'squad-en.png', 'academy-en.png', 'admin-match.png', 'home-mobile-en.png'],
+    metrics: [['56', 'fixtures'], ['2', 'languages']],
+  },
+  {
     slug: 'widnia',
     title: 'Widnia',
     kind: 'Property developer · catalogue + admin panel',

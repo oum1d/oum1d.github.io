@@ -1,6 +1,44 @@
 // Тексты кейсов на английском. Коротко и только по делу: какая задача, что
 // сделано и чем это полезно владельцу бизнеса. Без названий библиотек и приёмов.
 export const CASES = {
+  porohy: `## The problem
+
+A handball club lives on two things: children signing up for the academy and local companies paying
+to be seen. Both decisions start with the same question — is this club serious? A page that still
+shows last season's table answers that question badly.
+
+And nobody at a club wants to maintain a website. The coach has training to run.
+
+## What I built
+
+**A table nobody fills in.** The coach opens a match, types 31 and 20, and saves. The league table,
+the goal difference, the top scorer list, the player pages and the "next match" block on the home
+page all change by themselves. There is no second place where the same number could be wrong.
+
+**A squad page that stays honest.** Goals and appearances come from the match reports, so the
+numbers on a player's card always agree with the results page. Add up every player's goals and you
+get exactly what the table says the team scored.
+
+**The academy page as the main page.** Age groups, times, prices, what to bring to a first session,
+and the questions parents actually ask. The sign-up form goes to the coach by email and is also
+stored in the admin panel — email fails more often than people think, and a lost enquiry is a lost
+child.
+
+**Two languages without two sites.** Ukrainian for parents, English for European competitions.
+Pages and news are translated; club and player names are not duplicated — a name is transliterated,
+not translated, so one record serves both languages.
+
+**An admin panel built for a coach, not an editor.** A match is a form, not an article: the score
+and the squad stats sit at the top of the screen, before anything else.
+
+## Result
+
+A WordPress site with a theme written for this club rather than bought and adjusted — no page
+builder, no bundled template. 79 pages across two languages, 56 fixtures, every text contrast checked
+against WCAG AA, no horizontal scrolling at any width from 360 px up.
+
+The club is invented for this portfolio piece, and every page says so.`,
+
   widnia: `## The problem
 
 Since July 2025 developers in Poland must publish the price of every flat, keep the full history of
